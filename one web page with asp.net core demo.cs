@@ -1,6 +1,8 @@
 --> complete one web page with asp.net core 
-
-
+/**migration commands -->
+*-->add-migration name    
+*--> update-database
+**/
 
 1) connect project to mssql database
 
