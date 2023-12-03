@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+<!--it'll show the title of the table-->
+@{
+    ViewData["Title"] = "Departments";
+}
+
+<!--return the list from the controller in a table-->
+<!--strong type view meaning we specified the model type-->
+@model List<Department>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Department Name</th>
+       <th>Manager Name</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.ManagerName</td>
+
+
+            <td><a href="/Dept/detail/@item.Id">Deatil</a></td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Details</h1>
+<!--show specific depart detail with the name and managername-->
+<table class="table table-bordered table-hover">
+        <tr>
+            <th>Department Name</th>
+            <th>Department Manager Name</th>
+        </tr>
+    <tr>
+    <td>@Model.Name</td>
+    <td>@Model.ManagerName</td>
+    </tr>
+</table>
+<!--go back to dept controller/index action-->
+<a href="/Dept/index">Back To All Departments</a>

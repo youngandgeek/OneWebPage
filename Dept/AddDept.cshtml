@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!--strong type view model modelName-->
+
+@{
+    ViewData["Title"] = "Add New Department";
+}
+
+<!--action-> go to dept controller->savedept action method-->
+
+<form method="post" action="/Dept/SaveDept">
+
+    <div class="form-group">
+
+        <label for="Name"> Name:</label>
+        <!--this name attr have to match whats in the domain model and controller property-->
+        <input type="text" class="form-control" name="Name" >
+        </div>
+    <div class="form-group">
+        <label for="Manager Name">Manager Name:</label>
+        <input type="text" class="form-control" name="ManagerName">
+    </div>
+  
+    <input type="submit" class="btn btn-default">Add Department</>
+</form>
